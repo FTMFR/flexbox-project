@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link href="css/style.css" rel="stylesheet"> -->
+        <style>
+            #container {
+                height: 600px;
+                background-color: blueviolet;
+                display: flex;
+                /* flex-direction: column-reverse; */
+                /* flex-wrap: wrap; */
+                flex-flow: wrap row;
+                /* justify-content: space-evenly; */
+                align-items: baseline;
+                /* align-content: center; */
+
+            }
+
+            .item {
+                background-color: #f4f4f4;
+                border: 1px solid #ccc;
+                padding: 1rem;
+                margin: .75rem;
+                text-align: center;
+                flex: 1;
+            }
+
+            .item:first-child {
+                /* flex: 3; */
+                align-self: center;
+                order: 0;
+            }
+        </style>
+    </head>
+    <body>
+    <div id="container">
+        <div class="item">
+            <h3>1</h3>
+        </div>
+
+        <div class="item">
+            <h3>2</h3>
+        </div>
+
+        <div class="item">
+            <h3>3</h3>
+        </div>
+    </div>
+    </body>
+</html>
